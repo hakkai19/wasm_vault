@@ -28,7 +28,7 @@ function unlock() {
 
     const result = window.vault.instance.exports.unlock() != 0;
 
-    if (!result) {
+    if (result) {
         field.classList.remove("is-danger");
         field.classList.add("is-success");
     } else {
@@ -38,4 +38,5 @@ function unlock() {
 }
 
 load();
+
 
